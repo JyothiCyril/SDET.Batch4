@@ -1,0 +1,376 @@
+<html>
+<head>
+<title>TestNG:  Amazon Web Application - chrome</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Amazon Web Application - chrome</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/4/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Oct 03 10:55:51 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>178 seconds (178091 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.testscript.TC_AmazonSearchItem_002.SearchItem()'><b>SearchItem</b><br>Test class: com.qa.testscript.TC_AmazonSearchItem_002<br>Parameters: Books, Da vinci Code<br/>
+<a href="#Output-995211823" onClick='toggleBox("Output-995211823", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-995211823" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-995211823">
+Title is not correct<br/>
+The Da Vinci Code: (Robert Langdon Book 2)<br/>
+The Da Vinci Code (Abridged Edition)<br/>
+The Da Vinci Code<br/>
+DA VINCI CODE<br/>
+The Da Vinci Code: A Novel: 2 (Robert Langdon)<br/>
+The Da Vinci Code: (Robert Langdon Book 2)+The Lost Symbol: (Robert Langdon Book 3)+Digital Fortress(Set of 3books)<br/>
+The Da Vinci Code: (Robert Langdon Book 2)+Angels and Demons: (Robert Langdon Book 1)+Deception Point(Set of 3books)<br/>
+The Da Vinci Code<br/>
+The Complete Novels of Sherlock Holmes<br/>
+The Glass Bead Game (Vintage Classics)<br/>
+Davinci Code<br/>
+The Da Vinci Code: (Robert Langdon Book 2)+The Lost Symbol: (Robert Langdon Book 3)+Deception Point(Set of 3books)<br/>
+The Da Vinci Code: (Robert Langdon Book 2)+The Lost Symbol: (Robert Langdon Book 3)+Inferno: (Robert Langdon Book 4)(Set of 3books)<br/>
+The Da Vinci Code: (Robert Langdon Book 2)+Origin: (Robert Langdon Book 5)+Inferno: (Robert Langdon Book 4)(Set of 3books)<br/>
+The Da Vinci Code: (Robert Langdon Book 2)+The Lost Symbol: (Robert Langdon Book 3)(Set of 2books)<br/>
+The Da Vinci Code: (Robert Langdon Book 2)+Inferno: (Robert Langdon Book 4)(Set of 2books)<br/>
+THE DA VINCI CODE : A QUEST FOR ANSWERS (HINDI)<br/>
+The Da Vinci Code: (Robert Langdon Book 2)+Digital Fortress(Set of 2books)<br/>
+World’s Greatest Classics (Box Set of 4 Books)<br/>
+Leonardo Da Vinci<br/>
+The Origin of Species<br/>
+1984 (Deluxe Hardbound Edition)<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at com.qa.testscript.TC_AmazonSearchItem_002.SearchItem(TC_AmazonSearchItem_002.java:55)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace995211823", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace995211823'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at com.qa.testscript.TC_AmazonSearchItem_002.SearchItem(TC_AmazonSearchItem_002.java:55)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre></div></td>
+<td>28</td>
+<td>com.qa.testscript.TC_AmazonSearchItem_002@22ef9844</td></tr>
+<tr>
+<td title='com.qa.testscript.TC_AmazonSearchItem_002.SearchItem()'><b>SearchItem</b><br>Test class: com.qa.testscript.TC_AmazonSearchItem_002<br>Parameters: Electronics, Mobile phones<br/>
+<a href="#Output-1042665214" onClick='toggleBox("Output-1042665214", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1042665214" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1042665214">
+Title is not correct<br/>
+Samsung Galaxy M32 (Black, 6GB RAM, 128GB Storage) 6 Months Free Screen Replacement for Prime<br/>
+OnePlus 9 Pro 5G (Morning Mist, 12GB RAM, 256GB Storage)<br/>
+Redmi 9A (Nature Green, 2GB RAM, 32GB Storage) | 2GHz Octa-core Helio G25 Processor | 5000 mAh Battery<br/>
+Redmi 9 (Sky Blue, 4GB RAM, 64GB Storage) | 2.3GHz Mediatek Helio G35 Octa core Processor<br/>
+OPPO A31 (Fantasy White, 6GB RAM, 128GB Storage) with No Cost EMI/Additional Exchange Offers<br/>
+Redmi 9 (Carbon Black, 4GB RAM, 64GB Storage) | 2.3GHz Mediatek Helio G35 Octa core Processor<br/>
+Samsung Galaxy M12 (Blue,6GB RAM, 128GB Storage) 6 Months Free Screen Replacement for Prime<br/>
+Samsung Galaxy M12 (Blue,4GB RAM, 64GB Storage) 6000 mAh with 8nm Processor | True 48 MP Quad Camera | 90Hz Refresh Rate<br/>
+Redmi 9A (Midnight Black, 2GB RAM, 32GB Storage) | 2GHz Octa-Core Helio G25 Processor<br/>
+OPPO A74 5G (Fantastic Purple,6GB RAM,128GB Storage) - 5G Android Smartphone | 5000 mAh Battery | 18W Fast Charge | 90Hz LCD Display<br/>
+OPPO A31 (Mystery Black, 6GB RAM, 128GB Storage) with No Cost EMI/Additional Exchange Offers<br/>
+Redmi 9A (Sea Blue 2GB RAM 32GB Storage) | 2GHz Octa-core Helio G25 Processor | 5000 mAh Battery<br/>
+Redmi 9 Prime (Sunrise Flare, 4GB RAM, 64GB Storage)- Full HD+ Display & AI Quad Camera<br/>
+Samsung Galaxy M12 (Black,6GB RAM, 128GB Storage) 6 Months Free Screen Replacement for Prime<br/>
+Mi 11X Pro 5G (Lunar White, 8GB RAM, 128GB Storage) | Snapdragon 888 | 108MP Camera | 6 Month Free Screen Replacement for Prime | Additional 5000 Off on Exchange<br/>
+Samsung Galaxy M12 (Black,4GB RAM, 64GB Storage) 6000 mAh with 8nm Processor | True 48 MP Quad Camera | 90Hz Refresh Rate<br/>
+realme C11 (2021) (Cool Grey, 2GB RAM, 32GB Storage) with No Cost EMI/Additional Exchange Offers<br/>
+Redmi 9A (Nature Green, 3GB Ram, 32GB Storage) | 2GHz Octa-core Helio G25 Processor<br/>
+Nokia 5310 Dual SIM Feature Phone with MP3 Player, Wireless FM Radio and Rear Camera (White/Red)<br/>
+Panasonic Eluga i7 (2GB RAM, 16GB Storage, Finger Print Sensor, 4000mAh Battery) (Black)<br/>
+realme C11 (2021) (Cool Blue, 4GB RAM+64GB Storage) with No Cost EMI/Additional Exchange Offers<br/>
+Surya Leeco LETV X527 (3 GB 32 GB) 4G Volte Smartphone 5.5 Inch Display (Starry Rosegold)<br/>
+Vivo Y21 (Diamond Glow, 4GB RAM, 64GB Storage) with No Cost EMI/Additional Exchange Offers<br/>
+Jio Phone Black<br/>
+Nokia 105 Single SIM (Blue)<br/>
+I KALL K2 Plus Smartphone (4GB, 64GB) (Ocean Blue)<br/>
+Nokia 105 Single SIM (Black)<br/>
+OnePlus 9R 5G (Carbon Black, 8GB RAM, 128GB Storage)<br/>
+OnePlus Nord CE 5G (Charcoal Ink, 8GB RAM, 128GB Storage)<br/>
+iQOO Z3 5G (Ace Black, 8GB RAM, 128GB Storage) | India's First SD 768G 5G Processor | 55W FlashCharge | Upto 9 Months No Cost EMI | 6 Months Free Screen Replacement<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at com.qa.testscript.TC_AmazonSearchItem_002.SearchItem(TC_AmazonSearchItem_002.java:55)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1042665214", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1042665214'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at com.qa.testscript.TC_AmazonSearchItem_002.SearchItem(TC_AmazonSearchItem_002.java:55)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre></div></td>
+<td>26</td>
+<td>com.qa.testscript.TC_AmazonSearchItem_002@22ef9844</td></tr>
+<tr>
+<td title='com.qa.testscript.TC_AmazonSearchItem_002.SearchItem()'><b>SearchItem</b><br>Test class: com.qa.testscript.TC_AmazonSearchItem_002<br>Parameters: Furniture, Wooden Tables<br/>
+<a href="#Output-2146853256" onClick='toggleBox("Output-2146853256", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2146853256" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2146853256">
+Title is not correct<br/>
+Sunon Sofa Side End Table for Coffee or Laptop,Mobile Snack Table with Wheels Couch Bedside Table for Home and Office (Wood ,Grey Top/Black Frame)<br/>
+SHIVIO Stripes Wooden Side | Coffee Table<br/>
+DaneWood Solid Sheesham Wood Center Coffee Table with 4 stools Tea Table for Home Office Wooden Tables for Living Room (Espresso Finish)<br/>
+UHUD CRAFTS Beautiful Antique Wooden Fold-able Side Table/End Table/Plant Stand/Stool Living Room Kids Play Furniture Table Round Shape<br/>
+Care 4U ® Beautiful Wooden Antique Folding Side Table (Brown)<br/>
+RGrandsons Handmade Wooden Folding Table Stool Side Table<br/>
+BLUEWUD Mallium Engineered Wood Office Desk; Study Desk(Wenge Finish)<br/>
+DFC® Blight Engineered Wood Multipurpose Side Table (Matte Finish, Dark Wenge)<br/>
+Ereteken ART Wooden Foldable Adjustable Side Table/End Table/Coffee Table/Plant Stand/Outdoor Table/Stool 12Inch. (Brown) (Square Shaped)<br/>
+VDIX Beautiful Square Wooden Folding Coffee Table with Vintage Finish Ideal for Outdoor Indoor<br/>
+Gizga Essentials Multi-Purpose Portable & Foldable Wooden Desk for Bed Tray, Laptop Table, Study Table (Black)<br/>
+WOODEN CITY Handicrafts Classic Sheesham Wood Classic Wood Finish End Coffee Table for Living Room (Brown)<br/>
+CraftsX2Z Wooden Square Folding Adjustable Brown End Table/Coffee Table/Lamp Stand<br/>
+DaneWood Solid Sheesham Wood Center Coffee Table for Living Room Tea Table for Home Office Wooden Tables with 2 Stools (Walnut Finish)<br/>
+JGS Solid Wooden Iron Frame Nesting Tables Set of 3 Stools Bedside Table for Bedroom Living Room Tables Set for Seating Vase Stand Stool Furniture for Home Office & Garden - (Golden)<br/>
+JGS Solid Wooden & Iron Stand Bedside End Table for Home Living Room Wood Night Stand Side Stool for Bedroom Office & Hall - (Black Finish)<br/>
+DECORVAIZ Wooden Antique Royal Look Beautiful Folding Table - 12 INCH { Round }<br/>
+beyond collection Mango Wooden Contemporary Antique Finish Foldable Side Coffee Table/Planter Stool for Home, Garden, Balcony, Indoor Plants (Brown)<br/>
+OFIXO Multi-Purpose Laptop Table/Study Table/Bed Table/Foldable and Portable Wooden/Writing Desk (Wooden)<br/>
+CraftsX2Z Wooden Folding Side Table/and Coffee Table for Living Room,Office and Decoration.Hand-Craft Round Table for lamp,Books,Flower Pot,showpieces or Sitting. (Brown)<br/>
+GoRogue Foldable Wooden Mini Laptop Table for Bed, Study Table with Drawer, Tablet/Mobile Holder for Kids & Adults (Black)<br/>
+Ereteken ART Wooden Matte Handcrafted Square Antique Finish Stool for Living Room (Dark Brown, 12" inch (Modern, Natural)<br/>
+MAA® Reading Table Tray, Laptop Table, Laptop Stands, Laptop Desk, Foldable Study Laptop Table, Study Table (Wooden)<br/>
+Upmanyu Fashion Foldable Laptop Bed Table Lap Desk Stand Multi-Purpose Laptop Table/Study Table/Bed Table/Foldable and Portable Wooden/Writing Desk/Laptop table for home/bed/study table(Wood)<br/>
+WooDiN Premium Wooden Folding Side Table | Coffee Table 12INCH<br/>
+Savya home­® Multi-Purpose New Laptop Table/Bed Table/Wooden Foldable Bed Table/LAPDESK/Study Table/Portable Table (Black Silver)<br/>
+Wooden World Antique Finish Fold-able Stool/Small Coffee Table/Flower Pot Stand<br/>
+White Parrot Foldable Bed Study Table Portable Multifunction Laptop Table Lapdesk for Children Bed Foldabe Table Work Office Home with Tablet Slot & Cup Holder Bed Study Tabl Wooden Coloured<br/>
+India Handicrafts Wooden Folding Table, Baby Table for Living Room Size 12 x 12 Top 13 Height Inch<br/>
+BRUSHFINCH Writing Homework Table Creation-Best for Kids, Doremon Cartoon Pattern Top Multipurpose Wooden Laptop Desk Bed, Study Table, Reading and Dining Portable Table Strong for Kids Boy and Girl.<br/>
+OM CREATION Multipurpose Foldable Laptop Table with Cup Holder, Study Table, Bed Table, Breakfast Table, Foldable and Portable/Ergonomic & Rounded Edges/Non-Slip Legs (Wooden)<br/>
+Amazon Brand - Solimo Sienna Solid Sheesham Wood Contemporary Coffee Table (Teak Finish)<br/>
+Woodenclave Solid Sheesham Wood Bedside End Table Storage for Home Living Room Bedroom Solid Wood Night Stand Wooden Bed Room Furniture - (Brown Finish)<br/>
+Amazon Brand - Solimo Capella Engineered Wood Espresso Finish Modern Coffee Table (Brown)<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at com.qa.testscript.TC_AmazonSearchItem_002.SearchItem(TC_AmazonSearchItem_002.java:55)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2146853256", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2146853256'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at com.qa.testscript.TC_AmazonSearchItem_002.SearchItem(TC_AmazonSearchItem_002.java:55)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre></div></td>
+<td>36</td>
+<td>com.qa.testscript.TC_AmazonSearchItem_002@22ef9844</td></tr>
+<tr>
+<td title='com.qa.testscript.TC_AmazonSearchItem_002.SearchItem()'><b>SearchItem</b><br>Test class: com.qa.testscript.TC_AmazonSearchItem_002<br>Parameters: HomeAppliances, Washing Machines</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate element with text: HomeAppliances
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-0N88LAP&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
+	at com.qa.testscript.TC_AmazonSearchItem_002.SearchItem(TC_AmazonSearchItem_002.java:24)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1753044475", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1753044475'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate element with text: HomeAppliances
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-0N88LAP&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
+	at com.qa.testscript.TC_AmazonSearchItem_002.SearchItem(TC_AmazonSearchItem_002.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre></div></td>
+<td>3</td>
+<td>com.qa.testscript.TC_AmazonSearchItem_002@22ef9844</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.testscript.TC_AmazonRegistration_002.newRegistration()'><b>newRegistration</b><br>Test class: com.qa.testscript.TC_AmazonRegistration_002<br>Parameters: JyothiCyril<br/>
+<a href="#Output-817256251" onClick='toggleBox("Output-817256251", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-817256251" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-817256251">
+User is landed on registration page<br/>
+</div>
+</td>
+<td></td>
+<td>30</td>
+<td>com.qa.testscript.TC_AmazonRegistration_002@6283d8b8</td></tr>
+<tr>
+<td title='com.qa.testscript.TC_AmazonRegistration_002.newRegistration()'><b>newRegistration</b><br>Test class: com.qa.testscript.TC_AmazonRegistration_002<br>Parameters: Kim Smith<br/>
+<a href="#Output-1208824303" onClick='toggleBox("Output-1208824303", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1208824303" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1208824303">
+User is landed on registration page<br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>com.qa.testscript.TC_AmazonRegistration_002@6283d8b8</td></tr>
+<tr>
+<td title='com.qa.testscript.TC_AmazonRegistration_002.newRegistration()'><b>newRegistration</b><br>Test class: com.qa.testscript.TC_AmazonRegistration_002<br>Parameters: King Blake<br/>
+<a href="#Output-1818365160" onClick='toggleBox("Output-1818365160", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1818365160" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1818365160">
+User is landed on registration page<br/>
+</div>
+</td>
+<td></td>
+<td>28</td>
+<td>com.qa.testscript.TC_AmazonRegistration_002@6283d8b8</td></tr>
+<tr>
+<td title='com.qa.testscript.TC_AmazonRegistration_002.newRegistration()'><b>newRegistration</b><br>Test class: com.qa.testscript.TC_AmazonRegistration_002<br>Parameters: Roger S Pressmann<br/>
+<a href="#Output-740405857" onClick='toggleBox("Output-740405857", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-740405857" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-740405857">
+User is landed on registration page<br/>
+</div>
+</td>
+<td></td>
+<td>26</td>
+<td>com.qa.testscript.TC_AmazonRegistration_002@6283d8b8</td></tr>
+</table><p>
+</body>
+</html>

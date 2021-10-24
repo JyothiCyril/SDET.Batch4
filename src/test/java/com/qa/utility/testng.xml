@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Test Automation Framework" thread-count="5" parallel="tests">
+
+	<listeners>
+		<listener class-name="com.qa.utility.Reporting"></listener>
+	</listeners>
+
+
+	<test name="Test Automation Suite - Amazon">
+		<parameter name="Browser" value="chrome" />
+		<parameter name="Url" value="https://www.amazon.in/" />
+		<classes>
+			<class name="com.qa.testscript.TC_AmazonSearchItem_002"></class>
+			<class name="com.qa.testscript.TC_AmazonRegistration_002"></class>			
+		</classes>
+	</test>
+
+	<!-- <test name="Rediff Application"> <parameter name="Browser" value="chrome" 
+		/> <parameter name="Url" value="https://www.rediff.com/"></parameter> <classes> 
+		<class name="com.qa.testscript.TC_RediffLogin_001"></class> </classes> </test> -->
+	<!-- <test thread-count="5" name="Amazon Web Application"> <parameter name="Browser" 
+		value="chrome"></parameter> <parameter name="Url" value="https://www.amazon.in/" 
+		/> <classes> <class name="com.qa.testscript.TC_AmazonSearchItem_002" /> </classes> 
+		</test> -->
+	<!-- <test thread-count="5" name="Amazon Web Application - chrome" parallel="classes"> 
+		<parameter name="Browser" value="chrome"></parameter> <classes> <class name="com.qa.testscript.TC_AmazonSearchItem_002" 
+		/> <class name="com.qa.testscript.TC_AmazonRegistration_002" /> </classes> 
+		</test> Amazon Web Application -->
+
+	<!-- <test thread-count="5" name="Demo application testing" parallel="classes"> 
+		<classes> <class name="com.qa.testscript.WorkingwithDragandDrop" /> <class 
+		name="com.qa.testscript.WorkingWithMultipleWindows" /> </classes> </test> 
+		Amazon Web Application -->
+
+</suite> <!-- Test Automation Framework -->
